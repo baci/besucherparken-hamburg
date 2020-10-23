@@ -1,0 +1,21 @@
+﻿<Window x:Class="Besucherparken.GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Besucherparken.GUI"
+        mc:Ignorable="d"
+        Title="Besucherparken" Height="250" Width="400">
+    <Grid>
+        <Border Margin="20,30,30,20">
+            <Grid Name="panel">
+                <Label Content="Kennzeichen" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top" Height="26"/>
+                <TextBox TextWrapping="Wrap" Width="150" Height="26" HorizontalAlignment="Right" Margin="0,10,20,0" VerticalAlignment="Top" Text="{Binding KennzeichenValue}"/>
+                <Label Content="Parkdatum" HorizontalAlignment="Left" Margin="20,40,0,0" VerticalAlignment="Top" Height="26"/>
+                <TextBox TextWrapping="Wrap" Width="150" Height="26" HorizontalAlignment="Right" Margin="0,40,20,0" VerticalAlignment="Top" Text="{Binding ParkDatumValue}" />
+
+                <Button Command="{Binding StarteBesucherparkenCommand}" Width="150" Content="Starten" Margin="30,20,30,20" Height="25" />
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
