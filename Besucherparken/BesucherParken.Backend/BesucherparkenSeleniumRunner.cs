@@ -18,7 +18,7 @@ namespace BesucherParken.Backend
         private string passwort;
         private RemoteWebDriver driver;
         public IDictionary<string, object> vars { get; private set; }
-        private IJavaScriptExecutor js;
+        private readonly IJavaScriptExecutor js;
         public BesucherparkenSeleniumRunner()
         {
             driver = new FirefoxDriver();
