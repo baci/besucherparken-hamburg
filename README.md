@@ -8,7 +8,7 @@ Tech: C# (simple GUI with WPF), Selenium (using Firefox WebDriver)
 
 ## Usage instructions
 
-* Clone repository
+* Clone repository and open solution using Visual Studio 2019
 * Compile / Deploy Backend and GUI or Shell
 * Edit dll.config files to enter your own address and account data
 * Download current geckodriver executable and put it in your bin folder
